@@ -1,0 +1,33 @@
+{
+  "name": "components-react-bmw",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "start": "node ./esbuild/start.js",
+    "build": "npm run clean && node ./esbuild/build.js",
+    "clean": "rimraf dist",
+    "start:build": "npx http-server ./dist -p 5000",
+    "lint": "eslint --ext .tsx,.ts 'src'"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@wayke-se/components-react": "^4.0.0-beta.5",
+    "esbuild": "^0.19.5",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  },
+  "devDependencies": {
+    "@types/react": "^18.2.37",
+    "@types/react-dom": "^18.2.15",
+    "@typescript-eslint/eslint-plugin": "^6.10.0",
+    "@typescript-eslint/parser": "^6.10.0",
+    "esbuild-plugin-copy": "^2.1.1",
+    "eslint": "^8.53.0",
+    "eslint-plugin-react": "^7.33.2",
+    "rimraf": "^5.0.5",
+    "typescript": "^5.2.2"
+  }
+}
