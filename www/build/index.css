@@ -1,5 +1,36 @@
 @charset "UTF-8";
 
+/* src/index.css */
+.wayke__theme.wayke__color--primary-bg {
+  background-color: #ff5a1c;
+  color: #fff;
+}
+.wayke__theme.wayke__color--primary-text {
+  color: #ff5a1c;
+}
+.wayke__theme.wayke__color--secondary-bg {
+  background-color: #ebebeb;
+  color: #ff5a1c;
+}
+.wayke__theme.wayke__color--accent-bg {
+  background-color: #f8f8f8;
+  color: #000;
+}
+.wayke__theme.wayke__font--regular {
+  font-family: sans-serif;
+  font-weight: 300;
+  font-style: normal;
+  font-stretch: normal;
+  letter-spacing: 0.02em;
+}
+.wayke__theme.wayke__font--bold {
+  font-family: sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  font-stretch: normal;
+  letter-spacing: 0.02em;
+}
+
 /* node_modules/@wayke-se/components-react/dist/assets/default.css */
 .slick-slider {
   position: relative;
