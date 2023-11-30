@@ -3,7 +3,10 @@ import { createRoot } from 'react-dom/client';
 import './index.css';
 
 import '@wayke-se/components-react/dist/assets/default.css';
-import WaykeComposite, { WaykeCompositeWithProviderProps } from '@wayke-se/components-react';
+import WaykeComposite, {
+  WaykeCompositeWithProviderProps,
+  WaykePubSub,
+} from '@wayke-se/components-react';
 
 const settings: WaykeCompositeWithProviderProps = {
   composite: {
@@ -69,6 +72,11 @@ const settings: WaykeCompositeWithProviderProps = {
     urlMlt: 'https://api.wayke.se/vehicles-mlt-ext',
   },
 };
+
+WaykePubSub.subscribe({
+  eventName: 'All',
+  callback: (eventType, data) => console.log(eventType, data),
+});
 
 const container = document.getElementById('root');
 const root = createRoot(container!);
