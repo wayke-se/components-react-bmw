@@ -42,7 +42,7 @@ const settings: WaykeCompositeWithProviderProps = {
       },
       {
         filterName: 'properties.segment',
-        displayName: 'Segment',
+        displayName: 'Biltype',
       },
       {
         filterName: 'drivingWheel',
